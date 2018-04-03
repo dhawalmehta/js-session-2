@@ -66,7 +66,7 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps fit>JavaScript Can Change HTML Attributes:</Heading>
           <List>
-            <ListItem>Changing the src (source) attribute of an <img /> tag</ListItem>
+            <ListItem>Changing the src (source) attribute of an {"<img>"} tag</ListItem>
           </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
@@ -74,6 +74,15 @@ export default class Presentation extends React.Component {
           <List>
             <ListItem>document.querySelector('body').style.fontSize = "50px";</ListItem>
             <ListItem>Can change any css properties</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={["zoom"]} bgColor="tertiary">
+          <Heading size={3} textColor="primary" caps fit>Ways to Include JavaScript in your webpage</Heading>
+          <List>
+            <ListItem>Head or body?</ListItem>
+            <ListItem>Internal/Embedded (using {'<script>'})</ListItem>
+            <ListItem>External (.js extenstion)</ListItem>
           </List>
         </Slide>
 
@@ -109,24 +118,25 @@ export default class Presentation extends React.Component {
             <ListItem>Names must begin with a letter</ListItem>
             <ListItem>Names are case sensitive (y and Y are different variables)</ListItem>
             <ListItem>Reserved words (like JavaScript keywords) cannot be used as names eg: class, new, var etc</ListItem>
+            <ListItem>Use camel case</ListItem>
           </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps fit>Assignment Operator</Heading>
           <List>
-            <ListItem>Names can contain letters, digits, underscores, and dollar signs.</ListItem>
-            <ListItem>Names must begin with a letter</ListItem>
-            <ListItem>Names are case sensitive (y and Y are different variables)</ListItem>
-            <ListItem>Reserved words (like JavaScript keywords) cannot be used as names eg: class, new, var etc</ListItem>
+            <ListItem> = </ListItem>
+            <ListItem>RHS is assigned to LHS</ListItem>
+            <ListItem>var x = 6;</ListItem>
+            <ListItem>var z = x + y;</ListItem>
           </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps fit>JavaScript Data Types & Declaration</Heading>
           <List>
             <ListItem>string and number for now, many other</ListItem>
-            <ListItem>var x = 30; '//'number </ListItem>
-            <ListItem>var x = "dhawal mehta"; '//'string </ListItem>
-            <ListItem>var x = "30"; '//'string</ListItem>
+            <ListItem>var x = 30; //number </ListItem>
+            <ListItem>var x = "dhawal mehta"; //string </ListItem>
+            <ListItem>var x = "30"; //string</ListItem>
             <ListItem>var carName = "Volvo";var carName; doesnt lose value</ListItem>
           </List>
         </Slide>
@@ -152,10 +162,8 @@ export default class Presentation extends React.Component {
 
 
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Thank you!</Quote>
-            <Cite>Dhawal Mehta</Cite>
-          </BlockQuote>
+          <Heading size={3} textColor="primary" caps fit>Thank you!</Heading>
+          <Heading size={5} textColor="tertiary" >Dhawal Mehta</Heading>
         </Slide>
       </Deck>
     );

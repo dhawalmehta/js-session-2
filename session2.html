@@ -19,8 +19,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>
-  var x = 10,y = 4;
-  var z;
+  var x = 10,y = 3;
+  var z = x % y;
   var text;
 
   var type = typeof(1);
@@ -31,25 +31,25 @@
   // }
 
 
-  // if (true === 1) {
+  // if (false) {
   //   text = "value is true";
   // }else{
-  //   text = "value is false";
+  //   alert();
   // }
 
-  // var name = 'dhawal';
-  // switch ( name ) {
-  //   case "dhawal":
-  //   fullname = name + " mehta";
-  //   break;
-  //   case "hiten":
-  //   case "kanchan":
-  //   fullname = name + " has submitted really awesome assignment!";
-  //   break;
-  //   default:
-  //   fullname = name + "? kya pata kaun hai yeh? :p";
-  // }
-
+  var name = 'DKSFHKASJHDFKG';
+  switch ( name ) {
+    case "dhawal":
+    fullname = name + " mehta";
+    break;
+    case "hiten":
+    case "kanchan":
+    fullname = name + " has submitted really awesome assignment!";
+    break;
+    default:
+    fullname = name + "? kya pata kaun hai yeh? :p";
+  }
+  //
   // alert("value of x: " + x);
   // alert("value of x++: " + x++);
 
@@ -58,7 +58,7 @@
 
   // z = x;
 
-  document.getElementById('result').innerHTML = type;
+  document.getElementById('result').innerHTML = fullname;
 
   </script>
 </body>
